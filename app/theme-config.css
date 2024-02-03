@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css");
+
+.radix-themes {
+  --default-font-family: "Zen Kaku Gothic New", sans-serif;
+  --color-bg: var(--gray-2);
+  --color-primary: var(--blue-6);
+  --font-size-xl: var(--font-size-8);
+  --font-size-l: var(--font-size-6);
+  --font-size-m: var(--font-size-4);
+  --font-size-s: var(--font-size-2);
+  --font-color-gray: var(--gray-11);
+}
