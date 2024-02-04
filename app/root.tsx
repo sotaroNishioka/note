@@ -8,9 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { Theme } from "node_modules/@radix-ui/themes/dist/esm/theme";
 
-import "@radix-ui/themes/styles.css";
 import "~/theme-config.css";
 
 export const links: LinksFunction = () => [
@@ -37,18 +35,10 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Theme
-          accentColor="mint"
-          grayColor="gray"
-          panelBackground="solid"
-          scaling="100%"
-          radius="full"
-        >
-          <Outlet />
-          <ScrollRestoration />
-          <Scripts />
-          <LiveReload />
-        </Theme>
+        <Outlet />
+        <ScrollRestoration />
+        <Scripts />
+        <LiveReload />
       </body>
     </html>
   );

@@ -1,13 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css");
 
-.radix-themes {
+:root {
+  --screen-sm: 520px;
   --default-font-family: "Zen Kaku Gothic New", sans-serif;
-  --color-bg: var(--gray-2);
-  --color-primary: var(--blue-6);
-  --font-size-xl: var(--font-size-8);
-  --font-size-l: var(--font-size-6);
-  --font-size-m: var(--font-size-4);
-  --font-size-s: var(--font-size-2);
-  --font-color-gray: var(--gray-11);
+  --color-bg: #f9f9f9;
+  --color-white: #fff;
+  --color-primary: #e6f4fe;
+  --font-size-h1: 3.6rem;
+  --font-size-h2: 3.2rem;
+  --font-size-h3: 2.8rem;
+  --font-size-h4: 2.4rem;
+  --font-size-h5: 2rem;
+  --font-size-text: 1.6rem;
+  --font-size-subtext: 1.2rem;
+  --font-color-gray: #646464;
+  --font-weight-bold: 700;
+  --spaceing-xs: 0.4rem;
+  --spaceing-sm: 0.8rem;
+  --spaceing-md: 1.6rem;
+  --spaceing-lg: 2.4rem;
+  --spaceing-xl: 3.2rem;
+  --spaceing-xxl: 4.8rem;
+  --content-xs: 1.6rem;
+  --content-sm: 2.4rem;
+  --content-md: 3.2rem;
+  --content-lg: 4.8rem;
+  --content-xl: 6.4rem;
+  --content-xxl: 9.6rem;
+  --radius-xs: 0.4rem;
+  --radius-sm: 0.8rem;
+  --radius-md: 1.6rem;
+  --radius-lg: 2.4rem;
+  --radius-xl: 3.2rem;
+  --radius-xxl: 4.8rem;
+}
+
+@media screen and (max-width: 520px) {
+  :root {
+    --default-font-family: "Zen Kaku Gothic New", sans-serif;
+    --color-bg: #f9f9f9;
+    --color-primary: #e6f4fe;
+    --font-size-h1: 3rem;
+    --font-size-h2: 3.2rem;
+    --font-size-h3: 2.8rem;
+    --font-size-h4: 2.4rem;
+    --font-size-h5: 2rem;
+    --font-size-text: 1.6rem;
+    --font-size-subtext: 1.2rem;
+    --font-color-gray: #646464;
+    --spaceing-xs: 0.3rem;
+    --spaceing-sm: 0.6rem;
+    --spaceing-md: 1.2rem;
+    --spaceing-lg: 1.8rem;
+    --spaceing-xl: 2.4rem;
+    --spaceing-xxl: 3.6rem;
+    --content-xs: 1.2rem;
+    --content-sm: 2.4rem;
+    --content-md: 3.6rem;
+    --content-lg: 4.8rem;
+    --content-xl: 6rem;
+    --content-xxl: 9rem;
+    --radius-xs: 0.3rem;
+    --radius-sm: 0.6rem;
+    --radius-md: 1.2rem;
+    --radius-lg: 1.8rem;
+    --radius-xl: 2.4rem;
+    --radius-xxl: 3.6rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--default-font-family);
 }
