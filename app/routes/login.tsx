@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import styles from "~/routes/styles/login.module.css";
 
+import { BsGoogle } from "react-icons/bs";
 export const meta: MetaFunction = () => {
   return [
     { title: "login - note" },
@@ -19,7 +20,9 @@ export default function Index() {
           </div>
           <div className={styles.oauth}>
             <a href="/auth/google" className={styles.googleLogin}>
-              <div className={styles.googleLogo}></div>
+              <div className={styles.googleLogo}>
+                <BsGoogle />
+              </div>
               <p>Googleでログイン</p>
             </a>
           </div>

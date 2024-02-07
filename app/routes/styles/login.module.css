@@ -67,9 +67,17 @@
   height: var(--content-xl);
   border-radius: var(--radius-md);
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   font-size: var(--font-size-h5);
   font-weight: var(--font-weight-bold);
+  line-height: var(--content-xl);
   cursor: pointer;
+  background-color: var(--color-bg);
+}
+
+.content > .oauth > .googleLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -6,6 +6,7 @@
   --default-font-family: "Zen Kaku Gothic New", sans-serif;
   --color-bg: #f9f9f9;
   --color-white: #fff;
+  --color-gray: #f5f5f5;
   --color-primary: #e6f4fe;
   --font-size-h1: 3.6rem;
   --font-size-h2: 3.2rem;
@@ -34,6 +35,9 @@
   --radius-lg: 2.4rem;
   --radius-xl: 3.2rem;
   --radius-xxl: 4.8rem;
+  --border-thin: 0.1rem solid var(--color-gray);
+  --border-mid: 0.2rem solid var(--color-gray);
+  --border-thick: 0.4rem solid var(--color-gray);
 }
 
 @media screen and (max-width: 520px) {
