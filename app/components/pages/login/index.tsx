@@ -1,4 +1,4 @@
-const Index = () => {
+const Index = (): JSX.Element => {
   return (
     <div>
       <h1>Login</h1>

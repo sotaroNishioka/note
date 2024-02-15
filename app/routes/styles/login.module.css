@@ -66,7 +66,7 @@
   width: 100%;
   height: var(--content-xl);
   border-radius: var(--radius-md);
-  display: flex;
+  display: inline-flex;
   justify-content: left;
   align-items: center;
   font-size: var(--font-size-h5);

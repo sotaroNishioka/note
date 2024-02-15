@@ -22,10 +22,12 @@ export const links: LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap",
   },
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  ...(cssBundleHref != null
+    ? [{ rel: "stylesheet", href: cssBundleHref }]
+    : []),
 ];
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
     <html lang="en">
       <head>
