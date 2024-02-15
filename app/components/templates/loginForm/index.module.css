@@ -1,0 +1,78 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.container {
+  width: var(--screen-sm);
+  height: 800px;
+  padding: var(--spaceing-xxl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: var(--spaceing-xxl);
+    box-shadow: none;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: var(--spaceing-lg);
+  text-align: center;
+}
+
+.header > .title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spaceing-md);
+}
+
+.content > .oauth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--spaceing-lg);
+  margin-bottom: var(--spaceing-lg);
+}
+
+.content > .oauth > .googleLogin {
+  background-color: red;
+  width: 100%;
+  height: var(--content-xl);
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--content-xl);
+  cursor: pointer;
+  background-color: var(--color-bg);
+}
+
+.content > .oauth > .googleLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
