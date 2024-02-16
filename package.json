@@ -8,7 +8,9 @@
     "dev": "remix dev --manual",
     "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
     "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.6.0",
@@ -22,6 +24,14 @@
   },
   "devDependencies": {
     "@remix-run/dev": "^2.5.1",
+    "@storybook/addon-essentials": "^7.6.16",
+    "@storybook/addon-interactions": "^7.6.16",
+    "@storybook/addon-links": "^7.6.16",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.16",
+    "@storybook/react": "^7.6.16",
+    "@storybook/react-vite": "^7.6.16",
+    "@storybook/test": "^7.6.16",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
@@ -36,7 +46,9 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "prettier": "^3.2.5",
+    "storybook": "^7.6.16",
     "typescript": "^5.3.3"
   },
   "engines": {

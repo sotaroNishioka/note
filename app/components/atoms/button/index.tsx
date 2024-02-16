@@ -4,15 +4,12 @@ import React, { useMemo } from "react";
 
 interface Props {
   icon?: IconType;
-  className?: string;
   onClick?: () => void;
   size?: "small" | "medium" | "large";
   children: React.ReactNode;
 }
 
 const Button = (props: Props): JSX.Element => {
-  const className = props.className ?? "";
-
   const sizeStyle = useMemo(() => {
     switch (props.size) {
       case "small":
@@ -27,10 +24,7 @@ const Button = (props: Props): JSX.Element => {
   }, [props.size]);
 
   return (
-    <a
-      className={`${sizeStyle} ${className} ${style.button}`}
-      onClick={props.onClick}
-    >
+    <a className={`${sizeStyle} ${style.button}`} onClick={props.onClick}>
       {props.icon !== undefined && <props.icon className={style.icon} />}
       <p className={style.text}>{props.children}</p>
     </a>

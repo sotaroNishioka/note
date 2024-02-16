@@ -8,7 +8,12 @@ module.exports = {
       version: "detect",
     },
   },
-  extends: ["standard-with-typescript", "plugin:react/recommended", "prettier"],
+  extends: [
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:storybook/recommended"
+  ],
   parser: "@typescript-eslint/parser", // TypeScriptのパーサーを設定
   parserOptions: {
     ecmaVersion: "latest",
