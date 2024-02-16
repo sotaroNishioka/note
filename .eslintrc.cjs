@@ -3,6 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
   extends: ["standard-with-typescript", "plugin:react/recommended", "prettier"],
   parser: "@typescript-eslint/parser", // TypeScriptのパーサーを設定
   parserOptions: {
