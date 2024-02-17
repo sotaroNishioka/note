@@ -29,9 +29,9 @@ const meta = {
       control: "select",
       options: [undefined, "Bs0Circle", "Bs123", "BsGoogle"],
       mapping: {
-        Bs0Circle: Bs0Circle,
-        Bs123: Bs123,
-        BsGoogle: BsGoogle,
+        Bs0Circle,
+        Bs123,
+        BsGoogle,
       },
       defaultValue: undefined,
     },
