@@ -30,8 +30,8 @@
 
 .large {
   border-radius: var(--radius-lg);
-  padding-top: var(--spaceing-lg);
-  padding-bottom: var(--spaceing-lg);
+  padding-top: var(--spaceing-md);
+  padding-bottom: var(--spaceing-md);
   padding-left: var(--spaceing-xl);
   padding-right: var(--spaceing-xl);
 }

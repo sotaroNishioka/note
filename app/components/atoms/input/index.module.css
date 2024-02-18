@@ -1,0 +1,17 @@
+.small.root {
+  font-size: var(--font-size-subtext);
+  padding-top: var(--spaceing-sm);
+  padding-bottom: var(--spaceing-sm);
+}
+
+.medium.root {
+  font-size: var(--font-size-text);
+  padding-top: var(--spaceing-md);
+  padding-bottom: var(--spaceing-md);
+}
+
+.large.root {
+  font-size: var(--font-size-h5);
+  padding-top: var(--spaceing-md);
+  padding-bottom: var(--spaceing-md);
+}

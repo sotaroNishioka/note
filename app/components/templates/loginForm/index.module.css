@@ -76,3 +76,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.content > .emailLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--spaceing-lg);
+  margin-bottom: var(--spaceing-lg);
+}

@@ -1,0 +1,103 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: var(--border-mid);
+}
+
+.root:hover {
+  opacity: 0.8;
+}
+
+.input {
+  /* width: 100%; */
+  display: flex;
+  flex-grow: 1;
+}
+
+.small.root {
+  border-radius: var(--radius-sm);
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-sm);
+}
+
+.medium.root {
+  border-radius: var(--radius-md);
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-md);
+}
+
+.large.root {
+  border-radius: var(--radius-lg);
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-md);
+}
+
+.root.withPassword {
+  padding-right: 0;
+}
+
+.small > .input {
+  font-size: var(--font-size-subtext);
+  padding-top: var(--spaceing-sm);
+  padding-bottom: var(--spaceing-sm);
+}
+
+.medium > .input {
+  font-size: var(--font-size-text);
+  padding-top: var(--spaceing-md);
+  padding-bottom: var(--spaceing-md);
+}
+
+.large > .input {
+  font-size: var(--font-size-h5);
+  padding-top: var(--spaceing-md);
+  padding-bottom: var(--spaceing-md);
+}
+
+.small > div > .icon {
+  width: var(--font-size-subtext);
+  height: var(--font-size-subtext);
+  margin-right: var(--spaceing-sm);
+}
+
+.medium > div > .icon {
+  width: var(--font-size-text);
+  height: var(--font-size-text);
+  margin-right: var(--spaceing-sm);
+}
+
+.large > div > .icon {
+  width: var(--font-size-h5);
+  height: var(--font-size-h5);
+  margin-right: var(--spaceing-sm);
+}
+
+.root > div > .showPassword {
+  cursor: pointer;
+}
+
+.small > div > .showPassword {
+  width: calc(
+    var(--font-size-subtext) + var(--spaceing-sm) + var(--spaceing-md)
+  );
+  height: var(--font-size-subtext);
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-md);
+}
+
+.medium > div > .showPassword {
+  width: calc(var(--font-size-text) + var(--spaceing-sm) + var(--spaceing-md));
+  height: var(--font-size-text);
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-md);
+}
+
+.large > div > .showPassword {
+  width: calc(var(--font-size-h5) + var(--spaceing-md) + var(--spaceing-lg));
+  width: var(--font-size-h5);
+  height: var(--font-size-h5);
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-lg);
+}
