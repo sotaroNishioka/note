@@ -1,0 +1,110 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.small {
+  height: var(--content-md);
+  border-radius: calc(var(--content-md) / 2);
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-md);
+}
+
+.medium {
+  height: var(--content-lg);
+  border-radius: calc(var(--content-lg) / 2);
+  padding-left: var(--spaceing-lg);
+  padding-right: var(--spaceing-lg);
+}
+
+.large {
+  height: var(--content-xl);
+  border-radius: calc(var(--content-xl) / 2);
+  padding-left: var(--spaceing-xl);
+  padding-right: var(--spaceing-xl);
+}
+
+.text.submit {
+}
+
+.text.submit:hover {
+  background-color: var(--color-primary);
+}
+
+.text.danger {
+}
+
+.text.danger:hover {
+  background-color: var(--color-danger);
+}
+
+.text.info {
+}
+
+.text.info:hover {
+  background-color: var(--color-info);
+}
+
+.outline.submit {
+  border: var(--border-mid-primary);
+}
+
+.outline.submit:hover {
+  border: var(--border-mid-primary-dark);
+  background-color: var(--color-primary);
+}
+
+.outline.danger {
+  border: var(--border-mid-danger);
+}
+
+.outline.danger:hover {
+  border: var(--border-mid-danger-dark);
+  background-color: var(--color-danger);
+}
+
+.outline.info {
+  border: var(--border-mid-info);
+}
+
+.outline.info:hover {
+  border: var(--border-mid-info-dark);
+  background-color: var(--color-info);
+}
+
+.contained.submit {
+  border: var(--border-mid-primary-dark);
+  background-color: var(--color-primary);
+}
+
+.contained.submit:hover {
+  border: var(--border-mid-primary-dark);
+  background-color: var(--color-primary-dark);
+}
+
+.contained.danger {
+  border: var(--border-mid-danger-dark);
+  background-color: var(--color-danger);
+}
+
+.contained.danger:hover {
+  border: var(--border-mid-danger-dark);
+  background-color: var(--color-danger-dark);
+}
+
+.contained.info {
+  border: var(--border-mid-info-dark);
+  background-color: var(--color-info);
+}
+
+.contained.info:hover {
+  border: var(--border-mid-info-dark);
+  background-color: var(--color-info-dark);
+}

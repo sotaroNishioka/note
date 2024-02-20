@@ -12,3 +12,27 @@
   font-size: var(--font-size-h5);
   font-weight: bold;
 }
+
+.submit {
+  color: var(--font-color-primary);
+}
+
+.submit:hover {
+  color: var(--font-color-primary-dark);
+}
+
+.danger {
+  color: var(--font-color-danger);
+}
+
+.danger:hover {
+  color: var(--font-color-danger-dark);
+}
+
+.info {
+  color: var(--font-color-info);
+}
+
+.info:hover {
+  color: var(--font-color-info-dark);
+}

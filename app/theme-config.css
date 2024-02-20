@@ -8,6 +8,23 @@
   --color-white: #fff;
   --color-gray: #f5f5f5;
   --color-primary: #e6f4fe;
+  --color-primary-dark: #b3e0f9;
+  --color-danger: #ffe8e8;
+  --color-danger-dark: #ffcccc;
+  --color-info: #fafafa;
+  --color-info-dark: #e6e6e6;
+  --color-warn: #ffffe8;
+  --color-warn-dark: #ffffcc;
+  --font-color-gray: #646464;
+  --font-color-white: #fff;
+  --font-color-primary: #007bff;
+  --font-color-primary-dark: #0056b3;
+  --font-color-danger: #dc3545;
+  --font-color-danger-dark: #bd2130;
+  --font-color-info: #646464;
+  --font-color-info-dark: #464646;
+  --font-color-warn: #ffc107;
+  --font-color-warn-dark: #d39e00;
   --font-size-h1: 3.6rem;
   --font-size-h2: 3.2rem;
   --font-size-h3: 2.8rem;
@@ -36,9 +53,27 @@
   --radius-lg: 2.4rem;
   --radius-xl: 3.2rem;
   --radius-xxl: 4.8rem;
-  --border-thin: 0.1rem solid var(--color-gray);
-  --border-mid: 0.2rem solid var(--color-gray);
-  --border-thick: 0.4rem solid var(--color-gray);
+  --border-thin-gray: 0.1rem solid var(--color-gray);
+  --border-thin-primary: 0.1rem solid var(--color-primary);
+  --border-thin-primary-dark: 0.1rem solid var(--color-primary-dark);
+  --border-thin-danger: 0.1rem solid var(--color-danger);
+  --border-thin-danger-dark: 0.1rem solid var(--color-danger-dark);
+  --border-thin-info: 0.1rem solid var(--color-info);
+  --border-thin-info-dark: 0.1rem solid var(--color-info-dark);
+  --border-mid-gray: 0.2rem solid var(--color-gray);
+  --border-mid-primary: 0.2rem solid var(--color-primary);
+  --border-mid-primary-dark: 0.2rem solid var(--color-primary-dark);
+  --border-mid-danger: 0.2rem solid var(--color-danger);
+  --border-mid-danger-dark: 0.2rem solid var(--color-danger-dark);
+  --border-mid-info: 0.2rem solid var(--color-info);
+  --border-mid-info-dark: 0.2rem solid var(--color-info-dark);
+  --border-thick-gray: 0.4rem solid var(--color-gray);
+  --border-thick-primary: 0.4rem solid var(--color-primary);
+  --border-thick-primary-dark: 0.4rem solid var(--color-primary-dark);
+  --border-thick-danger: 0.4rem solid var(--color-danger);
+  --border-thick-danger-dark: 0.4rem solid var(--color-danger-dark);
+  --border-thick-info: 0.4rem solid var(--color-info);
+  --border-thick-info-dark: 0.4rem solid var(--color-info-dark);
 }
 
 @media screen and (max-width: 520px) {
