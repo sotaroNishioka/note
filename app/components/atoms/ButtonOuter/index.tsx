@@ -11,8 +11,8 @@ interface Props {
 
 const ButtonOuter = ({
   size = "medium",
-  variant = "contained",
-  type = "submit",
+  variant = "outline",
+  type = "info",
   onClick,
   children,
 }: Props): JSX.Element => {
@@ -38,7 +38,7 @@ const ButtonOuter = ({
       case "contained":
         return style.contained;
       default:
-        return style.contained;
+        return style.outline;
     }
   }, [variant]);
 
@@ -51,7 +51,7 @@ const ButtonOuter = ({
       case "info":
         return style.info;
       default:
-        return style.submit;
+        return style.info;
     }
   }, [type]);
 

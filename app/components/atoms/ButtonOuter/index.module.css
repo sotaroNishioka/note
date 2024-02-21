@@ -6,10 +6,6 @@
   cursor: pointer;
 }
 
-.button:hover {
-  opacity: 0.8;
-}
-
 .small {
   height: var(--content-md);
   border-radius: calc(var(--content-md) / 2);
@@ -31,21 +27,12 @@
   padding-right: var(--spaceing-xl);
 }
 
-.text.submit {
-}
-
 .text.submit:hover {
   background-color: var(--color-primary);
 }
 
-.text.danger {
-}
-
 .text.danger:hover {
   background-color: var(--color-danger);
-}
-
-.text.info {
 }
 
 .text.info:hover {
@@ -107,4 +94,16 @@
 .contained.info:hover {
   border: var(--border-mid-info-dark);
   background-color: var(--color-info-dark);
+}
+
+.submit {
+  color: var(--font-color-primary);
+}
+
+.danger {
+  color: var(--font-color-danger);
+}
+
+.info {
+  color: var(--font-color-info);
 }

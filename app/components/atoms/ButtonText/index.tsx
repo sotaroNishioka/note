@@ -7,7 +7,11 @@ interface Props {
   children: React.ReactNode;
 }
 
-const ButtonText = ({ size, type, children }: Props): JSX.Element => {
+const ButtonText = ({
+  size = "medium",
+  type = "info",
+  children,
+}: Props): JSX.Element => {
   const sizeStyle = useMemo(() => {
     switch (size) {
       case "small":
