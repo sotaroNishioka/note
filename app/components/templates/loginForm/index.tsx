@@ -1,8 +1,7 @@
 import styles from "~/components/templates/loginForm/index.module.css";
 
-import Button from "~/components/atoms/button";
-import { BsGoogle } from "react-icons/bs";
-import Input from "~/components/atoms/input";
+import Button from "~/components/molecules/Button";
+import Input from "~/components/atoms/Input";
 
 const Index = (): JSX.Element => {
   return (
@@ -12,7 +11,7 @@ const Index = (): JSX.Element => {
           <p className={styles.title}>admin</p>
         </div>
         <div className={styles.oauth}>
-          <Button icon={BsGoogle}>Googleでログイン</Button>
+          <Button>Googleでログイン</Button>
         </div>
         <div className={styles.emailLogin}>
           <Input

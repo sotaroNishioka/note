@@ -24,21 +24,33 @@ const meta = {
   argTypes: {
     variant: {
       control: "radio",
-      options: ["text", "outline", "contained"],
+      options: ["text", "outline", "contained", undefined],
       defaultValue: "outline",
       description: "ボタンの種類",
     },
     size: {
       control: "radio",
-      options: ["small", "medium", "large"],
+      options: ["small", "medium", "large", undefined],
       defaultValue: "medium",
       description: "ボタンのサイズ",
     },
     type: {
       control: "radio",
-      options: ["submit", "danger", "info"],
+      options: ["submit", "danger", "info", undefined],
       defaultValue: "submit",
       description: "ボタンのタイプ",
+    },
+    onClick: {
+      action: "clicked",
+      description: "ボタンクリック時のイベント",
+      control: "select",
+      options: [
+        undefined,
+        () => {
+          alert("clicked");
+        },
+      ],
+      defaultValue: undefined,
     },
     children: {
       description: "ボタン内部のテキスト",
