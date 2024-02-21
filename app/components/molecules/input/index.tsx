@@ -1,7 +1,6 @@
 import { type IconType } from "react-icons";
 import style from "./index.module.css";
 import React, { type ChangeEventHandler, useMemo } from "react";
-import { BsEye } from "react-icons/bs";
 
 interface Props {
   icon?: IconType;

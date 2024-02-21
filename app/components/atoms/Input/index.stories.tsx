@@ -24,9 +24,9 @@ const meta = {
   argTypes: {
     size: {
       control: "radio",
-      options: ["small", "medium", "large"],
+      options: ["small", "medium", "large", undefined],
       defaultValue: "medium",
-      description: "ボタンのサイズ",
+      description: "入力された文字のサイズ",
     },
     onChange: {
       description: "input変更時のイベント",
