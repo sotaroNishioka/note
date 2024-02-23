@@ -3,15 +3,10 @@ import style from "./index.module.css";
 
 interface Props {
   size?: "small" | "medium" | "large";
-  type?: "submit" | "danger" | "info";
   children: React.ReactNode;
 }
 
-const ButtonText = ({
-  size = "medium",
-  type = "info",
-  children,
-}: Props): JSX.Element => {
+const ButtonText = ({ size = "medium", children }: Props): JSX.Element => {
   const sizeStyle = useMemo(() => {
     switch (size) {
       case "small":
@@ -25,20 +20,7 @@ const ButtonText = ({
     }
   }, [size]);
 
-  const typeStyle = useMemo(() => {
-    switch (type) {
-      case "submit":
-        return style.submit;
-      case "danger":
-        return style.danger;
-      case "info":
-        return style.info;
-      default:
-        return style.submit;
-    }
-  }, [type]);
-
-  return <p className={`${sizeStyle} ${typeStyle}`}>{children}</p>;
+  return <p className={sizeStyle}>{children}</p>;
 };
 
 const Index = React.memo(ButtonText);

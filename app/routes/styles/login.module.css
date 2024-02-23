@@ -62,7 +62,6 @@
 }
 
 .content > .oauth > .googleLogin {
-  background-color: red;
   width: 100%;
   height: var(--content-xl);
   border-radius: var(--radius-md);
