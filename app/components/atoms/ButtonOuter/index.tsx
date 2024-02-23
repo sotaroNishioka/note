@@ -5,7 +5,7 @@ interface Props {
   size: "small" | "medium" | "large";
   variant: "text" | "outline" | "contained";
   type: "submit" | "danger" | "info";
-  onClick?: MouseEventHandler<HTMLAnchorElement>;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
   children: React.ReactNode;
 }
 
@@ -56,12 +56,12 @@ const ButtonOuter = ({
   }, [type]);
 
   return (
-    <a
+    <button
       className={`${typeStyle} ${variantStyle} ${sizeStyle} ${style.button}`}
       onClick={onClick}
     >
       {children}
-    </a>
+    </button>
   );
 };
 

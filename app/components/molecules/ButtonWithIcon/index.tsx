@@ -1,7 +1,6 @@
 import React, { useMemo, type MouseEventHandler } from "react";
 import { type IconType } from "react-icons";
 import ButtonOuter from "~/components/atoms/ButtonOuter";
-import ButtonText from "~/components/atoms/ButtonText";
 import style from "~/components/molecules/ButtonWithIcon/index.module.css";
 
 interface Props {
@@ -9,7 +8,7 @@ interface Props {
   variant?: "text" | "outline" | "contained";
   type?: "submit" | "danger" | "info";
   icon: IconType;
-  onClick?: MouseEventHandler<HTMLAnchorElement>;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
   children: React.ReactNode;
 }
 
@@ -39,9 +38,7 @@ const Button = ({
       <div className={style.iconWrap}>
         <Icon className={iconStyle} />
       </div>
-      <ButtonText size={size} type={type}>
-        {children}
-      </ButtonText>
+      {children}
     </ButtonOuter>
   );
 };

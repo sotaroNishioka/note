@@ -11,6 +11,8 @@
   border-radius: calc(var(--content-md) / 2);
   padding-left: var(--spaceing-md);
   padding-right: var(--spaceing-md);
+  font-size: var(--font-size-subtext);
+  font-weight: bold;
 }
 
 .medium {
@@ -18,6 +20,8 @@
   border-radius: calc(var(--content-lg) / 2);
   padding-left: var(--spaceing-lg);
   padding-right: var(--spaceing-lg);
+  font-size: var(--font-size-text);
+  font-weight: bold;
 }
 
 .large {
@@ -25,6 +29,8 @@
   border-radius: calc(var(--content-xl) / 2);
   padding-left: var(--spaceing-xl);
   padding-right: var(--spaceing-xl);
+  font-size: var(--font-size-h5);
+  font-weight: bold;
 }
 
 .text.submit:hover {
