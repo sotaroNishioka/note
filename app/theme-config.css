@@ -6,17 +6,17 @@
   --default-font-family: "Zen Kaku Gothic New", sans-serif;
   --color-bg: #f9f9f9;
   --color-white: #fff;
-  --color-gray: #f5f5f5;
   --color-primary: #e6f4fe;
   --color-primary-dark: #b3e0f9;
   --color-danger: #ffe8e8;
   --color-danger-dark: #ffcccc;
-  --color-info: #fafafa;
-  --color-info-dark: #e6e6e6;
+  --color-info: #dcdcdc;
+  --color-info-dark: #d3d3d3;
   --color-warn: #ffffe8;
   --color-warn-dark: #ffffcc;
-  --font-color-gray: #646464;
-  --font-color-white: #fff;
+  --font-color-black: #000000;
+  --font-color-gray: #808080;
+  --font-color-white: #ffffff;
   --font-color-primary: #007bff;
   --font-color-primary-dark: #0056b3;
   --font-color-danger: #dc3545;
@@ -32,7 +32,6 @@
   --font-size-h5: 2rem;
   --font-size-text: 1.6rem;
   --font-size-subtext: 1.2rem;
-  --font-color-gray: #646464;
   --font-weight-bold: 700;
   --spaceing-xxs: 0.2rem;
   --spaceing-xs: 0.4rem;
@@ -88,7 +87,6 @@
     --font-size-h5: 2rem;
     --font-size-text: 1.6rem;
     --font-size-subtext: 1.2rem;
-    --font-color-gray: #646464;
     --spaceing-xs: 0.3rem;
     --spaceing-sm: 0.6rem;
     --spaceing-md: 1.2rem;
