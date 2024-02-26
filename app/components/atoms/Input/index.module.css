@@ -10,8 +10,8 @@
 
 .small.outline {
   border-radius: var(--radius-sm);
-  padding-left: var(--spaceing-md);
-  padding-right: var(--spaceing-md);
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-sm);
 }
 
 .small.underline {
@@ -23,37 +23,35 @@
 .medium {
   height: var(--content-lg);
   font-size: var(--font-size-text);
-  line-height: var(--font-size-h4);
 }
 
 .medium.outline {
   border-radius: var(--radius-md);
-  padding-left: var(--spaceing-lg);
-  padding-right: var(--spaceing-lg);
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-sm);
 }
 
 .medium.underline {
   border-bottom: var(--border-mid-info);
-  padding-left: var(--spaceing-md);
-  padding-right: var(--spaceing-md);
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-sm);
 }
 
 .large {
   height: var(--content-xl);
   font-size: var(--font-size-h5);
-  line-height: var(--font-size-h3);
 }
 
 .large.outline {
   border-radius: var(--radius-lg);
-  padding-left: var(--spaceing-lg);
-  padding-right: var(--spaceing-lg);
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-md);
 }
 
 .large.underline {
   border-bottom: var(--border-mid-info);
-  padding-left: var(--spaceing-md);
-  padding-right: var(--spaceing-md);
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-sm);
 }
 
 .outline {
@@ -81,4 +79,12 @@
 
 .underline:focus {
   border-bottom: var(--border-mid-info-dark);
+}
+
+.outline.errorOutline {
+  border: var(--border-mid-danger-dark);
+}
+
+.underline.errorUnderline {
+  border-bottom: var(--border-mid-danger-dark);
 }

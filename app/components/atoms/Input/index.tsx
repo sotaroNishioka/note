@@ -6,6 +6,7 @@ interface Props {
   size?: "small" | "medium" | "large";
   type?: "text" | "password" | "email";
   variant?: "underline" | "outline";
+  isError?: boolean;
 }
 
 const InputElement = ({
@@ -13,6 +14,7 @@ const InputElement = ({
   size = "medium",
   type = "text",
   variant = "outline",
+  isError = false,
 }: Props): JSX.Element => {
   const variantStyle = useMemo(() => {
     switch (variant) {
@@ -38,11 +40,18 @@ const InputElement = ({
     }
   }, [size]);
 
+  const isErrorStyle = useMemo(() => {
+    if (variant === "outline") {
+      return style.errorOutline;
+    }
+    return style.errorUnderline;
+  }, [variant]);
+
   return (
     <input
       type={type}
       onChange={onChange}
-      className={`${variantStyle} ${sizeStyle}`}
+      className={`${variantStyle} ${sizeStyle} ${isError ? isErrorStyle : ""}`}
     />
   );
 };

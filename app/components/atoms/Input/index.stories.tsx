@@ -34,6 +34,11 @@ const meta = {
       defaultValue: "outline",
       description: "inputのバリエーション",
     },
+    isError: {
+      control: "boolean",
+      defaultValue: false,
+      description: "入力値に問題がある場合のスタイル",
+    },
     onChange: {
       description: "input変更時のイベント",
       control: "select",
@@ -51,29 +56,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Small: Story = {
-  args: {
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-      console.log(e.target.value);
-    },
-    size: "small",
-  },
-};
-
-export const Medium: Story = {
-  args: {
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-      console.log(e.target.value);
-    },
-    size: "medium",
-  },
-};
-
-export const Large: Story = {
-  args: {
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-      console.log(e.target.value);
-    },
-    size: "large",
-  },
+export const Default: Story = {
+  args: {},
 };
