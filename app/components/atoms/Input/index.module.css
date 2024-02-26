@@ -1,17 +1,28 @@
-.small.root {
+.small {
   font-size: var(--font-size-subtext);
   padding-top: var(--spaceing-sm);
   padding-bottom: var(--spaceing-sm);
 }
 
-.medium.root {
+.medium {
   font-size: var(--font-size-text);
   padding-top: var(--spaceing-md);
   padding-bottom: var(--spaceing-md);
 }
 
-.large.root {
+.large {
   font-size: var(--font-size-h5);
   padding-top: var(--spaceing-md);
   padding-bottom: var(--spaceing-md);
+}
+
+.outline {
+  border: none;
+  border-bottom: var(--border-mid-primary-dark);
+  outline: none;
+}
+
+.underline {
+  border-bottom: var(--border-mid-primary-dark);
+  background-color: var(--color-primary-dark);
 }

@@ -5,13 +5,26 @@ interface Props {
   onChange?: ChangeEventHandler<HTMLInputElement>;
   size?: "small" | "medium" | "large";
   type?: "text" | "password" | "email";
+  variant?: "underline" | "outline";
 }
 
 const Input = ({
   onChange,
   size = "medium",
   type = "text",
+  variant = "outline",
 }: Props): JSX.Element => {
+  const variantStyle = useMemo(() => {
+    switch (variant) {
+      case "underline":
+        return style.underline;
+      case "outline":
+        return style.outline;
+      default:
+        return style.outline;
+    }
+  }, [variant]);
+
   const sizeStyle = useMemo(() => {
     switch (size) {
       case "small":
@@ -29,7 +42,7 @@ const Input = ({
     <input
       type={type}
       onChange={onChange}
-      className={`${style.root} ${sizeStyle}`}
+      className={`${variantStyle} ${sizeStyle}`}
     />
   );
 };

@@ -28,6 +28,12 @@ const meta = {
       defaultValue: "medium",
       description: "入力された文字のサイズ",
     },
+    variant: {
+      control: "radio",
+      options: ["outline", "underline"],
+      defaultValue: "outline",
+      description: "inputのバリエーション",
+    },
     onChange: {
       description: "input変更時のイベント",
       control: "select",
