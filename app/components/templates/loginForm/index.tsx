@@ -1,7 +1,7 @@
 import styles from "~/components/templates/loginForm/index.module.css";
 
 import Button from "~/components/molecules/Button";
-import Input from "~/components/atoms/Input";
+import Input from "~/components/molecules/Input";
 import ButtonWithIcon from "~/components/molecules/ButtonWithIcon";
 import { Bs0Circle } from "react-icons/bs";
 

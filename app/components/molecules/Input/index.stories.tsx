@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Input from "./index";
 
 const meta = {
-  title: "Atoms/Input",
+  title: "Molecules/Input",
   component: Input,
   parameters: {
     docs: {
@@ -15,17 +15,28 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
+    type: {
+      control: "radio",
+      options: ["text", "password", "email", undefined],
+      defaultValue: "text",
+      description: "inputのtype",
+    },
     size: {
       control: "radio",
       options: ["small", "medium", "large", undefined],
       defaultValue: "medium",
       description: "入力された文字のサイズ",
     },
-    type: {
+    variant: {
       control: "radio",
-      options: ["text", "password", "email", undefined],
-      defaultValue: "text",
-      description: "inputのtype",
+      options: ["outline", "underline", undefined],
+      defaultValue: "outline",
+      description: "inputのバリエーション",
+    },
+    isError: {
+      control: "boolean",
+      defaultValue: false,
+      description: "入力値に問題がある場合のスタイル",
     },
     onChange: {
       description: "input変更時のイベント",
@@ -46,34 +57,4 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {},
-};
-
-export const Text: Story = {
-  args: {
-    type: "text",
-    size: "small",
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-      console.log(e.target.value);
-    },
-  },
-};
-
-export const Password: Story = {
-  args: {
-    type: "password",
-    size: "medium",
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-      console.log(e.target.value);
-    },
-  },
-};
-
-export const Email: Story = {
-  args: {
-    type: "email",
-    size: "large",
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
-      console.log(e.target.value);
-    },
-  },
 };
