@@ -8,7 +8,7 @@ interface Props {
   variant?: "underline" | "outline";
 }
 
-const Input = ({
+const InputElement = ({
   onChange,
   size = "medium",
   type = "text",
@@ -47,5 +47,5 @@ const Input = ({
   );
 };
 
-const Index = React.memo(Input);
+const Index = React.memo(InputElement);
 export default Index;

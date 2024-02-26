@@ -1,28 +1,84 @@
+.root {
+  width: 100%;
+}
+
 .small {
+  height: var(--content-md);
   font-size: var(--font-size-subtext);
-  padding-top: var(--spaceing-sm);
-  padding-bottom: var(--spaceing-sm);
+  line-height: var(--font-size-h5);
+}
+
+.small.outline {
+  border-radius: var(--radius-sm);
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-md);
+}
+
+.small.underline {
+  border-bottom: var(--border-mid-info);
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-sm);
 }
 
 .medium {
+  height: var(--content-lg);
   font-size: var(--font-size-text);
-  padding-top: var(--spaceing-md);
-  padding-bottom: var(--spaceing-md);
+  line-height: var(--font-size-h4);
+}
+
+.medium.outline {
+  border-radius: var(--radius-md);
+  padding-left: var(--spaceing-lg);
+  padding-right: var(--spaceing-lg);
+}
+
+.medium.underline {
+  border-bottom: var(--border-mid-info);
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-md);
 }
 
 .large {
+  height: var(--content-xl);
   font-size: var(--font-size-h5);
-  padding-top: var(--spaceing-md);
-  padding-bottom: var(--spaceing-md);
+  line-height: var(--font-size-h3);
+}
+
+.large.outline {
+  border-radius: var(--radius-lg);
+  padding-left: var(--spaceing-lg);
+  padding-right: var(--spaceing-lg);
+}
+
+.large.underline {
+  border-bottom: var(--border-mid-info);
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-md);
 }
 
 .outline {
   border: none;
-  border-bottom: var(--border-mid-primary-dark);
+  border: var(--border-mid-info);
   outline: none;
+  border-radius: var(--radius-sm);
+}
+
+.outline:hover {
+  border: var(--border-mid-info-dark);
+}
+
+.outline:focus {
+  border: var(--border-mid-info-dark);
 }
 
 .underline {
-  border-bottom: var(--border-mid-primary-dark);
-  background-color: var(--color-primary-dark);
+  border-bottom: var(--border-mid-info);
+}
+
+.underline:hover {
+  border-bottom: var(--border-mid-info-dark);
+}
+
+.underline:focus {
+  border-bottom: var(--border-mid-info-dark);
 }
