@@ -21,6 +21,11 @@
   padding-right: var(--spaceing-sm);
 }
 
+.small.underline.password,
+.small.outline.password {
+  padding-right: 0;
+}
+
 .medium {
   height: var(--content-lg);
 }
@@ -37,6 +42,11 @@
   padding-right: var(--spaceing-sm);
 }
 
+.medium.underline.password,
+.medium.outline.password {
+  padding-right: 0;
+}
+
 .large {
   height: var(--content-xl);
 }
@@ -51,6 +61,11 @@
   border-bottom: var(--border-mid-info);
   padding-left: var(--spaceing-sm);
   padding-right: var(--spaceing-sm);
+}
+
+.large.underline.password,
+.large.outline.password {
+  padding-right: 0;
 }
 
 .outline {
@@ -86,4 +101,74 @@
 
 .underline.errorUnderline {
   border-bottom: var(--border-mid-danger-dark);
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small > .iconWrap {
+  margin-right: var(--spaceing-xs);
+}
+
+.medium > .iconWrap {
+  margin-right: var(--spaceing-sm);
+}
+
+.large > .iconWrap {
+  margin-right: var(--spaceing-sm);
+}
+
+.small > .iconWrap > .icon {
+  width: var(--font-size-subtext);
+  height: var(--font-size-subtext);
+}
+
+.medium > .iconWrap > .icon {
+  width: var(--font-size-text);
+  height: var(--font-size-text);
+}
+
+.large > .iconWrap > .icon {
+  width: var(--font-size-h5);
+  height: var(--font-size-h5);
+}
+
+.passwordWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.small > .passwordWrap {
+  padding-left: var(--spaceing-xs);
+  padding-right: var(--spaceing-sm);
+}
+
+.medium > .passwordWrap {
+  padding-left: var(--spaceing-sm);
+  padding-right: var(--spaceing-md);
+}
+
+.large > .passwordWrap {
+  padding-left: var(--spaceing-md);
+  padding-right: var(--spaceing-md);
+}
+
+.small > .passwordWrap > .passwordIcon {
+  width: var(--font-size-subtext);
+  height: var(--font-size-subtext);
+}
+
+.medium > .passwordWrap > .passwordIcon {
+  width: var(--font-size-text);
+  height: var(--font-size-text);
+}
+
+.large > .passwordWrap > .passwordIcon {
+  width: var(--font-size-h5);
+  height: var(--font-size-h5);
 }

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import Input from "./index";
+import { Bs0Circle, Bs123, BsGoogle } from "react-icons/bs";
 
 const meta = {
   title: "Molecules/Input",
@@ -26,6 +27,18 @@ const meta = {
       options: ["small", "medium", "large", undefined],
       defaultValue: "medium",
       description: "入力された文字のサイズ",
+    },
+    icon: {
+      control: "radio",
+      options: ["BsGoogle", "Bs0Circle", "Bs123", undefined],
+      mapping: {
+        Bs0Circle,
+        Bs123,
+        BsGoogle,
+        undefined,
+      },
+      defaultValue: "BsGoogle",
+      description: "ボタン内に表示するアイコン",
     },
     variant: {
       control: "radio",
@@ -56,5 +69,31 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    icon: BsGoogle,
+  },
+};
+
+export const Password: Story = {
+  args: {
+    icon: Bs0Circle,
+    size: "small",
+    type: "password",
+  },
+};
+
+export const Email: Story = {
+  args: {
+    icon: Bs123,
+    size: "medium",
+    type: "email",
+  },
+};
+
+export const Text: Story = {
+  args: {
+    icon: BsGoogle,
+    size: "large",
+    type: "text",
+  },
 };
