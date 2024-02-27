@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import Button from "./index";
+import { Bs0Circle, Bs123, BsGoogle } from "react-icons/bs";
 
 const meta = {
   title: "Molecules/Button",
@@ -8,7 +9,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: "Buttonコンポーネント（アイコンな付随要素なし）",
+        component: "Buttonコンポーネント",
       },
     },
     layout: "centered",
@@ -32,6 +33,18 @@ const meta = {
       options: ["outline", "text", "contained", undefined],
       defaultValue: "text",
       description: "ボタンのバリエーション",
+    },
+    icon: {
+      control: "radio",
+      options: ["BsGoogle", "Bs0Circle", "Bs123", undefined],
+      mapping: {
+        Bs0Circle,
+        Bs123,
+        BsGoogle,
+        undefined,
+      },
+      defaultValue: "BsGoogle",
+      description: "ボタン内に表示するアイコン",
     },
     onClick: {
       action: "clicked",
@@ -61,6 +74,7 @@ export const Small: Story = {
     children: "Button",
     type: "submit",
     size: "small",
+    icon: Bs0Circle,
   },
 };
 
@@ -69,6 +83,7 @@ export const Medium: Story = {
     children: "Button",
     type: "danger",
     size: "medium",
+    icon: Bs123,
   },
 };
 
@@ -77,5 +92,6 @@ export const Large: Story = {
     children: "Button",
     type: "info",
     size: "large",
+    icon: BsGoogle,
   },
 };

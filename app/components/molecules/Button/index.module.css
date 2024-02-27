@@ -2,20 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: var(--spaceing-xs);
 }
 
 .iconWrap > .iconSmall {
   width: var(--font-size-subtext);
   height: var(--font-size-subtext);
+  margin-right: var(--spaceing-sm);
 }
 
 .iconWrap > .iconMedium {
   width: var(--font-size-text);
   height: var(--font-size-text);
+  margin-right: var(--spaceing-sm);
 }
 
 .iconWrap > .iconLarge {
   width: var(--font-size-h5);
   height: var(--font-size-h5);
+  margin-right: var(--spaceing-sm);
 }

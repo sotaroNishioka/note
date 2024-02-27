@@ -2,7 +2,6 @@ import styles from "~/components/templates/loginForm/index.module.css";
 
 import Button from "~/components/molecules/Button";
 import Input from "~/components/molecules/Input";
-import ButtonWithIcon from "~/components/molecules/ButtonWithIcon";
 import { Bs0Circle } from "react-icons/bs";
 
 const Index = (): JSX.Element => {
@@ -14,7 +13,7 @@ const Index = (): JSX.Element => {
         </div>
         <div className={styles.oauth}>
           <Button>Googleでログイン</Button>
-          <ButtonWithIcon icon={Bs0Circle}>Googleでログイン</ButtonWithIcon>
+          <Button icon={Bs0Circle}>Googleでログイン</Button>
         </div>
         <div className={styles.emailLogin}>
           <Input
