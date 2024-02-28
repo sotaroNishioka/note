@@ -1,5 +1,5 @@
 import React, { type MouseEventHandler, useMemo } from "react";
-import style from "./index.module.css";
+import style from "~/components/atoms/ButtonOuter/index.module.css";
 
 interface Props {
   size: "small" | "medium" | "large";

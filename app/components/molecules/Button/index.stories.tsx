@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Button from "./index";
+import Button from "~/components/molecules/Button";
 import { Bs0Circle, Bs123, BsGoogle } from "react-icons/bs";
 
 const meta = {

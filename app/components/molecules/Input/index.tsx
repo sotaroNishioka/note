@@ -1,19 +1,17 @@
-import style from "./index.module.css";
-import React, { type ChangeEventHandler, useMemo, useState } from "react";
+import style from "~/components/atoms/Input/index.module.css";
+import React, { useMemo, useState } from "react";
 import { type IconType } from "react-icons";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import Input from "~/components/atoms/Input";
+import { type Props as InputProps } from "~/components/atoms/Input";
 
-interface Props {
-  onChange?: ChangeEventHandler<HTMLInputElement>;
-  size?: "small" | "medium" | "large";
-  type?: "text" | "password" | "email";
+export interface Props extends InputProps {
   variant?: "underline" | "outline";
   isError?: boolean;
   icon?: IconType;
 }
 
-const InputWithIcon = ({
+const InputElement = ({
   onChange,
   size = "medium",
   type = "text",
@@ -111,5 +109,5 @@ const InputWithIcon = ({
   );
 };
 
-const Index = React.memo(InputWithIcon);
+const Index = React.memo(InputElement);
 export default Index;

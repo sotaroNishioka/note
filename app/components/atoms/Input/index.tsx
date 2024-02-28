@@ -1,7 +1,7 @@
-import style from "./index.module.css";
+import style from "~/components/atoms/Input/index.module.css";
 import React, { type ChangeEventHandler, useMemo } from "react";
 
-interface Props {
+export interface Props {
   onChange?: ChangeEventHandler<HTMLInputElement>;
   size?: "small" | "medium" | "large";
   type?: "text" | "password" | "email";

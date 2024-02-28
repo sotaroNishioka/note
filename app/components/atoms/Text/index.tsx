@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import style from "./index.module.css";
+import style from "~/components/atoms/Text/index.module.css";
 
 interface Props {
   size?: "subtext" | "text" | "strong" | "h5" | "h4" | "h3" | "h2" | "h1";

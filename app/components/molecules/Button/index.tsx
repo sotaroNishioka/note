@@ -1,7 +1,7 @@
 import React, { useMemo, type MouseEventHandler } from "react";
 import { type IconType } from "react-icons";
 import ButtonOuter from "~/components/atoms/ButtonOuter";
-import style from "~/components/molecules/ButtonWithIcon/index.module.css";
+import style from "~/components/molecules/Button/index.module.css";
 
 interface Props {
   size?: "small" | "medium" | "large";

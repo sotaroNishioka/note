@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import ButtonOutline from "./index";
+import ButtonOuter from "~/components/atoms/ButtonOuter";
 
 const meta = {
-  title: "Atoms/ButtonOutline",
-  component: ButtonOutline,
+  title: "Atoms/ButtonOuter",
+  component: ButtonOuter,
   parameters: {
     docs: {
       description: {
@@ -58,7 +58,7 @@ const meta = {
       control: "text",
     },
   },
-} satisfies Meta<typeof ButtonOutline>;
+} satisfies Meta<typeof ButtonOuter>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
