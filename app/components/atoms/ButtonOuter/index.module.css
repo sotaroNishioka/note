@@ -113,3 +113,15 @@
 .info {
   color: var(--font-color-info);
 }
+
+.submit:hover {
+  color: var(--font-color-primary-dark);
+}
+
+.danger:hover {
+  color: var(--font-color-danger-dark);
+}
+
+.info:hover {
+  color: var(--font-color-info-dark);
+}
