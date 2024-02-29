@@ -1,4 +1,4 @@
-import style from "~/components/atoms/Input/index.module.css";
+import style from "~/components/molecules/Input/index.module.css";
 import React, { useMemo, useState } from "react";
 import { type IconType } from "react-icons";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
