@@ -42,8 +42,8 @@ const meta = {
     },
     variant: {
       control: "radio",
-      options: ["outline", "underline", undefined],
-      defaultValue: "outline",
+      options: ["contained", "underline", undefined],
+      defaultValue: "contained",
       description: "inputのバリエーション",
     },
     isError: {

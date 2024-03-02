@@ -9,7 +9,7 @@
   line-height: var(--font-size-h5);
 }
 
-.small.outline {
+.small.contained {
   border-radius: var(--radius-sm);
   padding-left: var(--spaceing-sm);
   padding-right: var(--spaceing-sm);
@@ -22,7 +22,7 @@
 }
 
 .small.underline.password,
-.small.outline.password {
+.small.contained.password {
   padding-right: 0;
 }
 
@@ -30,7 +30,7 @@
   height: var(--content-lg);
 }
 
-.medium.outline {
+.medium.contained {
   border-radius: var(--radius-md);
   padding-left: var(--spaceing-md);
   padding-right: var(--spaceing-md);
@@ -43,7 +43,7 @@
 }
 
 .medium.underline.password,
-.medium.outline.password {
+.medium.contained.password {
   padding-right: 0;
 }
 
@@ -51,7 +51,7 @@
   height: var(--content-xl);
 }
 
-.large.outline {
+.large.contained {
   border-radius: var(--radius-lg);
   padding-left: var(--spaceing-md);
   padding-right: var(--spaceing-md);
@@ -64,22 +64,22 @@
 }
 
 .large.underline.password,
-.large.outline.password {
+.large.contained.password {
   padding-right: 0;
 }
 
-.outline {
+.contained {
   border: none;
   border: var(--border-mid-info);
   outline: none;
   border-radius: var(--radius-sm);
 }
 
-.outline:hover {
+.contained:hover {
   border: var(--border-mid-info-dark);
 }
 
-.outline:focus {
+.contained:focus {
   border: var(--border-mid-info-dark);
 }
 
@@ -95,7 +95,7 @@
   border-bottom: var(--border-mid-info-dark);
 }
 
-.outline.errorOutline {
+.contained.errorOutline {
   border: var(--border-mid-danger-dark);
 }
 

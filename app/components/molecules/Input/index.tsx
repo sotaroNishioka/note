@@ -6,7 +6,7 @@ import Input from "~/components/atoms/Input";
 import { type Props as InputProps } from "~/components/atoms/Input";
 
 export interface Props extends InputProps {
-  variant?: "underline" | "outline";
+  variant?: "underline" | "contained";
   isError?: boolean;
   icon?: IconType;
 }
@@ -15,7 +15,7 @@ const InputElement = ({
   onChange,
   size = "medium",
   type = "text",
-  variant = "outline",
+  variant = "contained",
   isError = false,
   icon,
 }: Props): JSX.Element => {
@@ -43,10 +43,10 @@ const InputElement = ({
     switch (variant) {
       case "underline":
         return style.underline;
-      case "outline":
-        return style.outline;
+      case "contained":
+        return style.contained;
       default:
-        return style.outline;
+        return style.contained;
     }
   }, [variant]);
 
@@ -79,7 +79,7 @@ const InputElement = ({
   }, [type]);
 
   const isErrorStyle = useMemo(() => {
-    if (variant === "outline") {
+    if (variant === "contained") {
       return style.errorOutline;
     }
     return style.errorUnderline;
