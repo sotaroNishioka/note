@@ -20,4 +20,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Iphone: Story = {
+  parameters: {
+    viewport: { defaultViewport: "iphonex" },
+  },
+};
