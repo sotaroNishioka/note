@@ -1,29 +1,27 @@
 import styles from "~/components/templates/loginForm/index.module.css";
 
 import Button from "~/components/molecules/Button";
-import Input from "~/components/molecules/Input";
-import { Bs0Circle } from "react-icons/bs";
+import InputWithLabel from "~/components/organisms/InputWithLabel";
+import { IoLockClosedOutline, IoMailOutline } from "react-icons/io5";
 
 const Index = (): JSX.Element => {
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <div className={styles.header}>
-          <p className={styles.title}>admin</p>
-        </div>
-        <div className={styles.oauth}>
-          <Button>Googleでログイン</Button>
-          <Button icon={Bs0Circle}>Googleでログイン</Button>
-        </div>
-        <div className={styles.emailLogin}>
-          <Input
-            onChange={(event) => {
-              console.log(event.target.value);
-            }}
-            type="text"
-          />
-        </div>
-      </div>
+    <div className={styles.root}>
+      <InputWithLabel
+        label="メールアドレス"
+        icon={IoMailOutline}
+        type="email"
+        size="large"
+        variant="contained"
+      />
+      <InputWithLabel
+        label="パスワード"
+        icon={IoLockClosedOutline}
+        type="password"
+        size="large"
+        variant="contained"
+      />
+      <Button>ログイン</Button>
     </div>
   );
 };
