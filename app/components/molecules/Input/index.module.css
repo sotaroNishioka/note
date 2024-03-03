@@ -6,7 +6,6 @@
 
 .small {
   height: var(--content-md);
-  line-height: var(--font-size-h5);
 }
 
 .small.contained {
